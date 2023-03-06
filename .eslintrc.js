@@ -33,6 +33,9 @@ module.exports = {
     // indent: [2, 6],
     indent: 'off',
     'no-tabs': 0,
+    'react/prop-types': 0,
+    'react/jsx-indent': [2, 'tab'],
+    'react/jsx-indent-props': [2, 'tab'],
     'react/jsx-filename-extension': [
       2,
       { extensions: ['.js', '.jsx', '.tsx'] },
@@ -50,9 +53,9 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'i18next/no-literal-string': ['error', { markupOnly: true }],
     'linebreak-style': 0,
-    'max-len': ['error', { ignoreComments: true }],
+    // 'max-len': ['error', { ignoreComments: true }],
+    'max-len': ['error', { code: 120 }],
     'eol-last': ['error', 'never'],
-    // 'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }],
   },
   globals: {
     __IS_DEV__: true,
