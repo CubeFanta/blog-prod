@@ -53,8 +53,8 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'i18next/no-literal-string': ['error', { markupOnly: true }],
     'linebreak-style': 0,
-    // 'max-len': ['error', { ignoreComments: true }],
-    'max-len': ['error', { code: 120 }],
+    'max-len': ['error', { ignoreComments: true, code: 120 }],
+    // 'max-len': ['error', { code: 120 }],
     'eol-last': ['error', 'never'],
   },
   globals: {
