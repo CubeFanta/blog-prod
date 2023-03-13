@@ -6,7 +6,7 @@ on: push:
     branches: [master]
 jobs:
    pipline:
-     runs-on: ubuntu-lastest
+     runs-on: ubuntu-latest
   strategy:
      matrix:
         node-version: [17.x]
