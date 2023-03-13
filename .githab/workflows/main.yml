@@ -1,14 +1,14 @@
 name: linting, testing, buildung
 on: push:
-    branchrs: [master],
+    branchrs: [master]
     pull_request:
-    branches: [master],
+    branches: [master]
 jobs:
    pipline:
-     runs-on: ubuntu-lastest,
+     runs-on: ubuntu-lastest
   strategy:
      matrix:
-        node-version: [17.x],
+        node-version: [17.x]
 
     steps:
       - uses: actions/checkout@v2
