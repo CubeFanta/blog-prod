@@ -1,4 +1,5 @@
 name: linting, testing, buildung
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: push:
     branchrs: [main]
     pull_request:
