@@ -27,7 +27,7 @@ export const Navbar = ({ className }: NavbarProps) => {
 				{t('Войти')}
 			</Button>
 			<Modal isOpen={isAuthModal} onClose={onToggleModal}>
-				/
+				{t('texttexttexttexttexttexttexttext')}
 			</Modal>
 		</div>
 	);
