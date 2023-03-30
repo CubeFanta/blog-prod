@@ -13,41 +13,48 @@ select {
 }
 
 :root {
-  --font-family-main: Consolas, "Times New Roman", Serif;
+  --font-family-main: consolas, "Times New Roman", serif;
   --font-size-m: 16px;
   --font-line-m: 24px;
   --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
   --font-size-l: 24px;
   --font-line-l: 32px;
   --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+  --font-size-xl: 32px;
+  --font-line-xl: 40px;
+  --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
   --navbar-height: 50px;
   --sidebar-width: 300px;
   --sidebar-width-collapsed: 80px;
+  --modal-z-index: 10;
+  --overlay-color: rgba(0 0 0 / 40%);
 }
 
-:root,
-.app.dark {
+.app_dark_theme {
   --bg-color: #090952;
   --inverted-bg-color: #a8a8af;
-  --primary-color: rgb(36, 167, 36);
-  --secondary-color: rgb(6, 136, 6);
-  --inverted-primary-color: rgb(8, 49, 102);
-  --inverted-secondary-color: rgb(0, 105, 204);
+  --primary-color: rgb(6 136 6);
+  --secondary-color: rgb(36 167 36);
+  --inverted-primary-color: rgb(8 49 102);
+  --inverted-secondary-color: rgb(0 105 204);
 }
 
 :root {
   --bg-color: #a8a8af;
   --inverted-bg-color: #090952;
-  --primary-color: rgb(47, 102, 173);
-  --secondary-color: rgb(24, 84, 139);
-  --inverted-primary-color: rgb(12, 190, 12);
-  --inverted-secondary-color: rgb(6, 136, 6);
+  --primary-color: rgb(47 102 173);
+  --secondary-color: rgb(24 84 139);
+  --inverted-primary-color: rgb(6 136 6);
+  --inverted-secondary-color: rgb(12 190 12);
+}
+
+body {
+  font: var(--font-m);
+  color: var(--primary-color);
 }
 
 .app {
-  font: var(--font-m);
   background: var(--bg-color);
-  color: var(--primary-color);
   min-height: 100vh;
 }
 

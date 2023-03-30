@@ -1,9 +1,8 @@
-:root,
-.app.dark {
+.app_dark_theme {
   --bg-color: #090952;
   --inverted-bg-color: #a8a8af;
-  --primary-color: rgb(36, 167, 36);
-  --secondary-color: rgb(6, 136, 6);
-  --inverted-primary-color: rgb(8, 49, 102);
-  --inverted-secondary-color: rgb(0, 105, 204);
+  --primary-color: rgb(6 136 6);
+  --secondary-color: rgb(36 167 36);
+  --inverted-primary-color: rgb(8 49 102);
+  --inverted-secondary-color: rgb(0 105 204);
 }/*# sourceMappingURL=dark.css.map */
