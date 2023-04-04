@@ -13,5 +13,7 @@
 	"Переключить": "Переключить",
 	"Короткий язык": "En",
 	"Increment": "Increment",
-	"Decrement": "Decrement"
+	"Decrement": "Decrement",
+	"Введите имя>": "Enter name>",
+	"Введите пароль>": "Enter password>"
 }

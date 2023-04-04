@@ -1,3 +1,23 @@
-.Input {
-	
+.InputWrapper {
+	display: flex;
+	white-space: nowrap;
+}
+
+.placeholder {
+	margin-right: 5px;
+}
+
+.input {
+	border-style: solid;
+	background: transparent;
+	border-color: var(--primary-color);
+	border-radius: 5px;
+	border-width: 1px;
+	outline: none;
+	width: 100%;
+	color: var(--primary-color);
+
+	&:focus {
+		outline: none;
+	}
 }
