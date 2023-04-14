@@ -26,6 +26,13 @@
 		}
 	],
 	"profile": {
-		"name": "typicode"
+		"first": "Cube",
+		"lastname": "Fanta",
+		"age": "28",
+		"currency": "RUB",
+		"country": "Russia",
+		"city": "Moscow",
+		"username": "admin",
+		"avatart": "https://files.cults3d.com/uploaders/13911089/illustration-file/5a648ac9-6b4f-47e1-9461-8acf2dbb3387/aang.jpg"
 	}
 }
