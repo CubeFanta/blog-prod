@@ -1,12 +1,12 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { Button, ThemeButton } from 'shared/ui/Button/Button';
+import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { Input } from 'shared/ui/Input/Input';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { memo, useCallback } from 'react';
 import { useSelector } from 'react-redux';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
-import { DynamicModuleLoader, RedusersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { loginByUsername } from '../../model/services/loginByUsername/loginByUsername';
 import { loginActions, loginReducer } from '../../model/slice/loginSlice';
 import { getLoginUsername } from '../../model/selectors/getLodingUsername/getLoginUsername';
@@ -20,7 +20,7 @@ export interface LoginFormProps {
 	onSuccess: () => void;
 }
 
-const initialReducers: RedusersList = {
+const initialReducers: ReducersList = {
 	loginForm: loginReducer,
 };
 
@@ -70,7 +70,7 @@ const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
 					value={password}
 				/>
 				<Button
-					theme={ThemeButton.OUTLINE}
+					theme={ButtonTheme.OUTLINE}
 					className={cls.loginBtn}
 					onClick={onLoginClick}
 					disabled={isLoading}

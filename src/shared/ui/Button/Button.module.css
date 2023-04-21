@@ -66,4 +66,8 @@
 
 .size_xl {
   font: var(--font-xl);
+}
+
+.disabled {
+  opacity: 0.5;
 }/*# sourceMappingURL=Button.module.css.map */
