@@ -1,38 +1,38 @@
 {
-	"posts": [
-		{
-			"id": "1",
-			"title": "json-server",
-			"userId": "1"
-		},
-		{
-			"id": "2",
-			"title": "json-server",
-			"userId": "2"
-		}
-	],
-	"comments": [
-		{
-			"id": "1",
-			"body": "some comment",
-			"postId": "1"
-		}
-	],
-	"users": [
-		{
-			"id": "1",
-			"username": "admin",
-			"password": "123"
-		}
-	],
-	"profile": {
-		"first": "Cube",
-		"lastname": "Fanta",
-		"age": "28",
-		"currency": "RUB",
-		"country": "Russia",
-		"city": "Moscow",
-		"username": "admin",
-		"avatart": "https://files.cults3d.com/uploaders/13911089/illustration-file/5a648ac9-6b4f-47e1-9461-8acf2dbb3387/aang.jpg"
-	}
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "title": "json-server",
+      "userId": "2"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": "1"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123"
+    }
+  ],
+  "profile": {
+    "first": "Cube",
+    "lastname": "Fanta",
+    "age": "28",
+    "currency": "EUR",
+    "country": "Belarus",
+    "city": "Moscow",
+    "username": "admin",
+    "avatar": "https://files.cults3d.com/uploaders/13911089/illustration-file/5a648ac9-6b4f-47e1-9461-8acf2dbb3387/aang.jpg"
+  }
 }
