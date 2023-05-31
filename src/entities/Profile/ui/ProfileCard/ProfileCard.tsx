@@ -107,16 +107,6 @@ export const ProfileCard = (props: ProfileCardProps) => {
 					readonly={readonly}
 				/>
 				<Input
-					value={data?.country}
-					placeholder={t('Ваша Страна')}
-					className={cls.input}
-				/>
-				<Input
-					value={data?.currency}
-					placeholder={t('Ваша ЗП')}
-					className={cls.input}
-				/>
-				<Input
 					value={data?.username}
 					placeholder={t('Ваше имя пользователя')}
 					className={cls.input}
