@@ -11,6 +11,7 @@ const data = {
 	lastname: 'CubeFanta',
 	first: 'asd',
 	currency: Currency.RUB,
+	id: '1',
 };
 
 describe('updateProfileData.test', () => {

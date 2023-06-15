@@ -102,6 +102,48 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "gfhgfdhd",
+      "id": "dEF6Q1T"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "gfhgfdhd43434",
+      "id": "-hn2Vp0"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "sdsd",
+      "id": "qmHS5X6"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "sdsd",
+      "id": "s-9QanQ"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "sdsdsvcv",
+      "id": "FEqlw1O"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "hello",
+      "id": "dgxSRke"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "dick",
+      "id": "KV58h8k"
     }
   ],
   "users": [
@@ -120,14 +162,28 @@
       "avatar": "https://files.cults3d.com/uploaders/13911089/illustration-file/5a648ac9-6b4f-47e1-9461-8acf2dbb3387/aang.jpg"
     }
   ],
-  "profile": {
-    "first": "Cube",
-    "lastname": "Fanta",
-    "age": "28",
-    "currency": "RUB",
-    "country": "Russia",
-    "city": "Moscow",
-    "username": "admin",
-    "avatar": "https://files.cults3d.com/uploaders/13911089/illustration-file/5a648ac9-6b4f-47e1-9461-8acf2dbb3387/aang.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Cube",
+      "lastname": "Fanta",
+      "age": "28",
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "admin",
+      "avatar": "https://files.cults3d.com/uploaders/13911089/illustration-file/5a648ac9-6b4f-47e1-9461-8acf2dbb3387/aang.jpg"
+    },
+    {
+      "id": "2",
+      "first": "Berger",
+      "lastname": "Burger",
+      "age": 25,
+      "currency": "RUB",
+      "country": "Belarus",
+      "city": "Minsk",
+      "username": "admin",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg54CIa61KmWji7JSQw0DIAP5ojbSFBvajIA&usqp=CAU"
+    }
+  ]
 }
