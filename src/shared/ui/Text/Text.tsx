@@ -7,7 +7,7 @@ export enum TextTheme {
 	ERROR = 'error',
 }
 
-export enum TextAling {
+export enum TextAlign {
 	RIGHT = 'right',
 	LEFT = 'left',
 	CENTER = 'center',
@@ -23,7 +23,7 @@ interface TextProps {
 	title?: string;
 	text?: string;
 	theme?: TextTheme;
-	aling?: TextAling;
+	aling?: TextAlign;
 	size?: TextSize;
 }
 
@@ -33,7 +33,7 @@ export const Text = memo((props: TextProps) => {
 		title,
 		text,
 		theme = TextTheme.PRIMARY,
-		aling = TextAling.LEFT,
+		aling = TextAlign.LEFT,
 		size = TextSize.M,
 	} = props;
 

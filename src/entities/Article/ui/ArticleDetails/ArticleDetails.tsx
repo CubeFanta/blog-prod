@@ -3,25 +3,25 @@ import { useTranslation } from 'react-i18next';
 import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { memo, useCallback, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { Text, TextAling, TextSize } from 'shared/ui/Text/Text';
-import { Skeleton } from 'shared/ui/Sceleton/Skeleton';
+import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
+import { Text, TextAlign, TextSize } from 'shared/ui/Text/Text';
+import { Skeleton } from 'shared/ui/Skeleton/Skeleton';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
 import EyeIcon from 'shared/assets/icons/eye-20-20.svg';
 import CalendarIcon from 'shared/assets/icons/calendar-20-20.svg';
 import { Icon } from 'shared/ui/Icon/Icon';
-import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
+import { ArticleCodeBlockComponent } from 'entities/Article/ui/ArticleCodeBlockComponent/ArticleCodeBlockComponent';
+import { ArticleImageBlockComponent } from 'entities/Article/ui/ArticleImageBlockComponent/ArticleImageBlockComponent';
+import { ArticleTextBlockComponent } from 'entities/Article/ui/ArticleTextBlockComponent/ArticleTextBlockComponent';
 import { fetchArticleById } from '../../model/services/fetchArticleById/fetchArticleById';
 import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
+import cls from './ArticleDetails.module.scss';
 import {
 	getArticleDetailsData,
 	getArticleDetailsError,
 	getArticleDetailsIsLoading,
 } from '../../model/selectors/articleDetails';
 import { ArticleBlock, ArticleBlockType } from '../../model/types/article';
-import { ArticleCodeBlockComponent } from '../ArticleCodeBlockComponent/ArticleCodeBlockComponent';
-import { ArticleImageBlockComponent } from '../ArticleImageBlockComponent/ArticleImageBlockComponent';
-import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent';
-import cls from './ArticleDetails.module.scss';
 
 interface ArticleDetailsProps {
 	className?: string;
@@ -43,11 +43,29 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
 	const renderBlock = useCallback((block: ArticleBlock) => {
 		switch (block.type) {
 			case ArticleBlockType.CODE:
-				return <ArticleCodeBlockComponent key={block.id} className={cls.block} block={block} />;
+				return (
+					<ArticleCodeBlockComponent
+						key={block.id}
+						block={block}
+						className={cls.block}
+					/>
+				);
 			case ArticleBlockType.IMAGE:
-				return <ArticleImageBlockComponent key={block.id} className={cls.block} block={block} />;
+				return (
+					<ArticleImageBlockComponent
+						key={block.id}
+						block={block}
+						className={cls.block}
+					/>
+				);
 			case ArticleBlockType.TEXT:
-				return <ArticleTextBlockComponent key={block.id} className={cls.block} block={block} />;
+				return (
+					<ArticleTextBlockComponent
+						key={block.id}
+						className={cls.block}
+						block={block}
+					/>
+				);
 			default:
 				return null;
 		}
@@ -74,7 +92,7 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
 	} else if (error) {
 		content = (
 			<Text
-				aling={TextAling.CENTER}
+				aling={TextAlign.CENTER}
 				title={t('Произошла ошибка при загрузке статьи.')}
 			/>
 		);
@@ -102,7 +120,7 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
 					<Icon className={cls.icon} Svg={CalendarIcon} />
 					<Text text={article?.createdAt} />
 				</div>
-				{article?.block.map(renderBlock)}
+				{article?.blocks.map(renderBlock)}
 			</>
 		);
 	}
@@ -113,6 +131,5 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
 				{content}
 			</div>
 		</DynamicModuleLoader>
-
 	);
 });

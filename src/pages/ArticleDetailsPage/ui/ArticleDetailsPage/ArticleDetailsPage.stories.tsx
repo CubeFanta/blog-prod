@@ -21,7 +21,11 @@ const article: Article = {
 	views: 1022,
 	createdAt: '26.02.2022',
 	type: [ArticleType.IT],
-	block: [
+	user: {
+		id: '1',
+		username: 'CubeFanta',
+	},
+	blocks: [
 		{
 			id: '1',
 			type: ArticleBlockType.TEXT,

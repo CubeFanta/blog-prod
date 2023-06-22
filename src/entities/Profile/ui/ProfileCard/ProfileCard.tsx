@@ -1,6 +1,6 @@
 import { Mods, classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { Text, TextAling, TextTheme } from 'shared/ui/Text/Text';
+import { Text, TextAlign, TextTheme } from 'shared/ui/Text/Text';
 import { Loader } from 'shared/ui/Loader/Loader';
 import { Input } from 'shared/ui/Input/Input';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
@@ -60,7 +60,7 @@ export const ProfileCard = (props: ProfileCardProps) => {
 					theme={TextTheme.ERROR}
 					title={t('Произошла ошибка загрузки профиля')}
 					text={t('Попробуйте обновить страницу')}
-					aling={TextAling.CENTER}
+					aling={TextAlign.CENTER}
 				/>
 			</div>
 		);
