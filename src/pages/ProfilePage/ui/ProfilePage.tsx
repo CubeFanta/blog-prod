@@ -21,6 +21,7 @@ import { useCallback } from 'react';
 import { Country } from 'entities/Country';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { ProfilePageHeader } from './ProfilePageHeader/ProfilePageHeader';
+import { Page } from 'shared/ui/Page/Page';
 
 const redusers: ReducersList = {
 	profile: profileReducer,
@@ -89,7 +90,7 @@ const ProfilePage = ({ className }: ProfilePageProps) => {
 
 	return (
 		<DynamicModuleLoader reducers={redusers} removeAfterUnmount>
-			<div className={classNames('', {}, [className])}>
+			<Page className={classNames('', {}, [className])}>
 				<ProfilePageHeader />
 				{validateErrors?.length && validateErrors.map((error) => (
 					<Text
@@ -112,7 +113,7 @@ const ProfilePage = ({ className }: ProfilePageProps) => {
 					onChangeCurrency={onChangeCurrency}
 					onChangeCountry={onChangeCountry}
 				/>
-			</div>
+			</Page>
 		</DynamicModuleLoader>
 
 	);
