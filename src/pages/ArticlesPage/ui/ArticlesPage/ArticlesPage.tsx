@@ -13,7 +13,7 @@ import {
 	getArticlesPageNum,
 	getArticlesPageView,
 } from 'pages/ArticlesPage/modal/selectors/articlesPageSelectors';
-import { Page } from 'shared/ui/Page/Page';
+import { Page } from 'widgets/Page/Page';
 import { initArticlesPage } from '../../modal/services/initArticlesPage/initArticlesPage';
 import { fetchNextArticlesPage } from '../../modal/services/fetchNextArticlesPage/fetchNextArticlesPage';
 import { articlesPageActions, articlesPageReduser, getArticles } from '../../modal/slice/articlesPageSlice';
