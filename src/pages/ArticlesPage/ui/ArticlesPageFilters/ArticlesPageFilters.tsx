@@ -15,7 +15,6 @@ import { Input } from 'shared/ui/Input/Input';
 import { SortOrder } from 'shared/types';
 import { useDebounce } from 'shared/lib/hooks/useDebounce/useDebounce';
 import { ArticleType } from 'entities/Article/model/types/article';
-import { TabItem, Tabs } from 'shared/ui/Tabs/Tabs';
 import { fetchArticlesList } from '../../modal/services/fetchArticlesList/fetchArticlesList';
 import { articlesPageActions } from '../../modal/slice/articlesPageSlice';
 import {
@@ -72,8 +71,8 @@ export const ArticlesPageFilters = memo((props: ArticlesPageFiltersProps) => {
 	const onChangeType = useCallback((value: ArticleType) => {
 		dispatch(articlesPageActions.setType(value));
 		dispatch(articlesPageActions.setPage(1));
-		debouncedFetchData();
-	}, [dispatch, debouncedFetchData]);
+		fetchData();
+	}, [dispatch, fetchData]);
 
 	return (
 		<div className={classNames(cls.ArticlesPageFilters, {}, [className])}>
