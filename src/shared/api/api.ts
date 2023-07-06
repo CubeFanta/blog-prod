@@ -9,4 +9,5 @@ $api.interceptors.request.use((config) => {
 	if (config.headers) {
 		config.headers.Authorization = localStorage.getItem(USER_LOCALSTOREGE_KEY) || '';
 	}
+	return config;
 });
