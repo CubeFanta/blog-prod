@@ -23,7 +23,6 @@ interface ArticleListItemProps {
 	article: Article;
 	view: ArticleView;
 	target?: HTMLAttributeAnchorTarget;
-
 }
 
 export const ArticleListItem = memo((props: ArticleListItemProps) => {
